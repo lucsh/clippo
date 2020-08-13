@@ -1,0 +1,188 @@
+actions:
+- action_respond_address
+- action_respond_date
+- action_respond_time
+- respond_out_of_scope
+- utter_can_i_help
+- utter_cheer_up
+- utter_did_not_help
+- utter_did_that_help
+- utter_ask_contacto
+- utter_goodbye
+- utter_greet
+- utter_handle_insult
+- utter_happy
+- utter_human_handoff
+- utter_iamabot
+- utter_gracias
+- utter_tarjetas_bajas
+- utter_tarjetas_reimpresiones
+- utter_tarjetas_alta_adicional
+- utter_tarjetas_alta_corporativa
+- utter_tarjetas_aumento_limite
+- utter_tarjetas_ajustes
+- utter_tarjetas_reclamos_usuarios
+- utter_tarjetas_comercios
+- utter_tarjetas_debito_robo_perdida
+- utter_tarjetas_debito_reposicion
+- utter_mda_cargar_caso
+- utter_mda_consultar_caso
+
+entities:
+- circunscripcion
+- dependencia
+- edificio
+
+intents:
+- ask_address
+- ask_contacto
+- mood_great
+- greet
+- nada
+- human_handoff
+- handle_insult
+- ask_time
+- ask_date
+- bot_challenge
+- goodbye
+- affirm
+- deny
+- mood_unhappy
+- gracias
+- tarjetas_bajas
+- tarjetas_reimpresiones
+- tarjetas_alta_adicional
+- tarjetas_alta_corporativa
+- tarjetas_aumento_limite
+- tarjetas_ajustes
+- tarjetas_reclamos_usuarios
+- tarjetas_comercios
+- tarjetas_debito_robo_perdida
+- tarjetas_debito_reposicion
+- mda_cargar_caso
+- mda_consultar_caso
+
+- out_of_scope:
+    triggers: respond_out_of_scope
+    use_entities: []
+responses:
+  utter_can_i_help:
+  - text: Te puedo ayudar en algo?
+  - text: En que te puedo ser util?
+  - text: Que puedo hacer por vos?
+  utter_can_i_help_more:
+    - text: Te puedo ayudar en algo más?
+    - text: Puedo ayudarte en algo más?
+    - text: Puedo hacer algo más por vos?
+  utter_cheer_up:
+  - text: Espero poder ayudar a cambiar eso!
+  - text: Espero poder ayudarte!
+  utter_did_not_help:
+  - text: Disculpas! Voy a registrarlo para mejorar.
+  - text: Mil disculpas! Voy a registrarlo para mejorar.
+  - text: Perdón! Voy a registrarlo para mejorar.
+  utter_did_that_help:
+  - text: Te ayudó?
+  utter_ask_contacto:
+  - text: Puede encontrar la informacion en el siguiente 👉 [enlace](https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A6e221096-1757-470e-b1d3-2a4e565b72c0)
+  utter_goodbye:
+  - text: Chau!
+  - text: Hasta luego!
+  - text: Que estes bien!
+  utter_greet:
+  - text: Hola! Como estas?
+  - text: Buen día! Como estas?
+  - text: Hola, buen día! Como estas?
+  utter_handle_insult:
+  - text: Ok, perdon, hago lo posible 😢
+  - text: Perdon, soy un bot y todavía estoy aprendiendo 😕
+  - text: Voy a hacer como que no entendí
+  utter_happy:
+  - text: Buenisimo!
+  - text: Genial!
+  - text: 👍👍
+  - text: 👍
+  utter_human_handoff:
+  - text: Para comunicarte con una persona de mesa de ayuda, te dejo 👉 [este link](http://mesadeayuda/usdkv8) con la información de contacto.
+  utter_iamabot:
+  - text: Soy Nova, el asistente virtual del Banco Provincia del Neuquen.
+
+  utter_gracias:
+  - text: Por nada!
+  - text: no es nada!
+  - text: de nada!
+  - text: 👍👍👍
+  - text: 👍
+
+  utter_tarjetas_bajas:
+    - text: |
+         1. Se gestionan por el punto de menu en Bantotal.
+         2. Bajas de VISA excepcionalmenmte no se pueden solicitar por este punto de menú, se debe gestionar un reporte de caso especificando la tarjeta a dar de baja. 
+
+
+  utter_tarjetas_reimpresiones:
+    - text: |
+         1. Se gestionan por el punto de menu.
+         2. En caso de las confiables, si el ultimo plastico fue activado por el cliente, debe el mism cliente llamar al call center para solicitar la reposición ya sea por robo/perdida/hurto/deterioro/etc, pero no se gestionan a traves del Banco.
+
+  utter_tarjetas_alta_adicional:
+    - text: |
+         1. Ingresar por el punto de menu en bantotal y cargar los datos del adicional
+         2. Ingresar en la tablet con cuil titular para firmar el formulario
+         3. Ingresar en la tablet con cuil adicional para sacar foto al dni del adicional
+         4. Tener en cuenta que el sistema no permite cargar mas de un adicional por tarjeta (visa/master/confiable)
+
+  utter_tarjetas_alta_corporativa:
+    - text: |
+         1. Bajar los formularios actualizados desde el cuerpo normativo. 
+         Estos son: 50.024 + Anexo 1 + Anexo 2 + 4500 + 4501
+         2. Completar dichos formularios en computadora
+         3. Adicionar al legajo: Calificacion Automatica o Resolucion de Creditos + Constancia Afip + Dni/cuil de las personas que se cargan en cada f-4501 + BCRA de la cuenta principal + f-3129 en caso que la cuenta principal sea persona fisica
+
+  utter_tarjetas_aumento_limite:
+    - text: |
+         1. Ingresar por el punto de menu en bantotal.
+         2. Verificar que las tarjetas vinculadas en el punto de aumento de limites sean las que el cliente está usando, caso contrario comunicarse con el Dpto Centralizadora
+         3. En caso de editar ingreso promedio, sacar foto con la tablet a la doumnetacion crediticia mismo dia que gestionan la modificacion por el punto de menú.
+         4. Si los límites figuran en "0", comunicarse con Dpto Centralizadora.
+  utter_tarjetas_ajustes:
+    - text: |
+         1. Se gestionan a traves de Aranda
+         2. Se debe adjuntar el F2952 completo, detallando datos del cliente, la tarjeta sobre la que se solicita el ajuste y el importe que se reclama. El formulario Debe estar firmado por Gerente o Responsable de sucursal.
+  utter_tarjetas_reclamos_usuarios:
+    - text: |
+         1. Ingresar el reclamo a través de Gestión de pasos de BT para su registro.
+         2. Los reclamos correspondientes a las marcas Confiable y Visa se canalizan a través de los medios habilitados directamente con las marcas. 
+         3. Solo se toman reclamos de MasterCard y Maestro para ambos casos adjuntar F2961:  
+         - MAESTRO: enviar stambién F121 completo, detallando datos del cliente y numero tarjeta con la que se realizaron las operaciones. Se debe detallar cada operación incluyendo fecha, descripción e importe. Además adjuntar extracto de la cuenta donde se verifique que las mismas fueron debitadas exitosamente.
+         - MASTERCARD enviar F120 completo, detallando datos del cliente y numero tarjeta con la que se realizaron las operaciones. Se debe detallar cada operación incluyendo fecha, nro de cupón, descripción e importe.
+
+  utter_tarjetas_comercios:
+    - text: |
+         1. Ingresar solicitudes a través de Aranda
+         2. Para el alta de comercios es fundamental indicar con que procesadora trabajara el cliente Firstdata (Posnet) o Prisma (Lapos) para ello siempre se debe adjuntar el F3034 
+         - PRISMA: adjuntar la siguiente documentación completa y firmada (Se informa que el legajo digital del cliente debe encontrarse COMPLETO con Constancia de Inscripción de IIBB, DNI del firmante y Estatuto / Contrato Social (para personas jurídicas):
+         * PRI100 – 2020 (Visa / Master/ Cabal)
+         * CONSTANCIA DE CBU
+         * F 2894 (Confiable)
+         - FIRSTDATA: adjuntar la siguiente documentación completa y firmada 
+         * FORMULARIO UNICO 2020 FIRST DATA / POSNET (Visa / Master)
+         * F21001 (Cabal)
+         * F 2894 (Confiable)
+
+  utter_tarjetas_debito_robo_perdida:
+    - text: |
+         Si extraviaste tu tarjeta de débito, puedes denunciar comunicándote al 0800 888 5465 de link, allí bloquearan el plástico y tu home banking. Paso posterior debes sacar un turno en  www.bpn.com.ar para ser atendido en sucursal y solicitar una nueva tarjeta de débito, 
+         O comunicarse con el 📞 (0299) 4496550 de Lunes a viernes de 8:00 a 14:00 hs. 
+  utter_tarjetas_debito_reposicion:
+    - text: |
+         La solicitud y retiro de las tarjetas de débito se realizan de manera presencial en sucursal. Se debe solicitar un turno en nuestra web 👉 [enlace](http://www.bpn.com.ar) para ser atendido en plataforma y gestionar una nueva tarjeta de débito. 
+
+  utter_mda_cargar_caso:
+    - text: Ingresa a 1
+
+  utter_mda_consultar_caso:
+    - text: Ingresa a 2
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 480

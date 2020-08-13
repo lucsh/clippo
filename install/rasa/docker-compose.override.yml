@@ -1,0 +1,12 @@
+version: '3.4'
+services:
+  app:
+    restart: always
+    image: rasa-clippo
+    volumes:
+      - /etc/rasa/actions:/app/actions
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
+  rasa-production:
+    ports:
+      - 5005:5005

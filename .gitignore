@@ -1,0 +1,16 @@
+.DS_Store
+*.pyc
+*.log
+models
+*.egg-info
+failed_stories.txt
+failed_stories.md
+demo/index.html
+.idea
+test_train_split
+results
+.history
+rasa.*
+events.*
+.pytype/
+.env
