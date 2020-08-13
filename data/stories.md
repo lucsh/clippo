@@ -46,10 +46,6 @@
   * deny
     - utter_goodbye
     
- ## que_podes_hacer
- * que_podes_hacer
-   - utter_que_podes_hacer
-
 ## interactive_story_3
 * greet
     - utter_greet
