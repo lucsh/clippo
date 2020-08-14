@@ -13,6 +13,7 @@ cp actions.py install/rasa/actions/
 cp .env install/rasa/actions/
 
 echo "Copying models..."
+mkdir install/rasa/models/
 cp models/* install/rasa/models/
 
 echo "Building custom image..."
