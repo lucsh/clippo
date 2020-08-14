@@ -100,9 +100,6 @@
 - tengo que quedarme en casa?
 - tengo que ir a trabajar
 
-## intent:ask_contacto
-
-
 ## intent:handle_insult
 - bot de mierda
 - sos un pelotudo
@@ -185,8 +182,6 @@
 - que fecha es hoy?
 - en que dia estamos?
 - me podes decir que dia es hoy?
-
-## intent:ask_address
 
 ## intent:mda_cargar_caso
 - Como cargo un caso?
@@ -273,11 +268,13 @@
 - jajaja
 - jeje
 
+## intent:tarjetas_debito_robo_perdida
+- perdi mi tarjeta
 
 ## synonym:maltrato
-- pega
 - abusa
 - insulta
+- pega
 
 ## synonym:pago
 - abono
