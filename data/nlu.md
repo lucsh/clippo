@@ -41,6 +41,8 @@
 - bien y vos?
 - Bien vos?
 - bien vos?
+- Bien y vos_
+- Bien
 
 ## intent:mood_unhappy
 - triste
@@ -99,9 +101,6 @@
 - Quien debe ir a trabajar?
 - tengo que quedarme en casa?
 - tengo que ir a trabajar
-
-## intent:ask_contacto
-
 
 ## intent:handle_insult
 - bot de mierda
@@ -185,8 +184,6 @@
 - que fecha es hoy?
 - en que dia estamos?
 - me podes decir que dia es hoy?
-
-## intent:ask_address
 
 ## intent:mda_cargar_caso
 - Como cargo un caso?
@@ -273,10 +270,13 @@
 - jajaja
 - jeje
 
+## intent:tarjetas_debito_robo_perdida
+- perdi mi tarjeta
+- Perdi mi tarjeta
 
 ## synonym:maltrato
-- pega
 - abusa
+- pega
 - insulta
 
 ## synonym:pago
